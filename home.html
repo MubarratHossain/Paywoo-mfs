@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paywoo Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+  <main class="flex justify-center items-start h-screen">
+    <div class="mockup-phone mt-4">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3 p-4">
+  
+          <!-- Stats section -->
+          <div class="stats shadow mb-4">
+            <div id="Amount-added" class="stat flex flex-col items-center">
+              <div class="stat-value text-3xl">50000</div>
+              <div class="stat-desc text-lg">Available Balance</div>
+            </div>
+          </div>
+  
+          <!-- Button section -->
+          <div class="flex justify-center gap-4 mb-4">
+            <button id="add-money-btn" class="btn btn-lg">Add money</button>
+            <button id="cash-out-btn" class="btn btn-lg">Cash Out</button>
+          </div>
+  
+          <!-- Add Money Form section -->
+          <form id="add-money-form" class="bg-white border border-gray-300 p-4 rounded-lg mb-4 hidden">
+            <div class="form-control mb-4">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input id="add-amount-money" type="number" placeholder="Enter your amount" class="input input-bordered w-full" required />
+            </div>
+            <div class="form-control mb-4">
+              <label class="label">
+                <span class="label-text">Pin</span>
+              </label>
+              <input id="add-pin-no" type="password" placeholder="Enter your pin" class="input input-bordered w-full" required />
+              <label class="label">
+                <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+              </label>
+            </div>
+            <div class="form-control">
+              <button id="add-money" class="btn btn-primary w-full">Add money</button>
+            </div>
+          </form>
+  
+          <!-- Cash Out Form section -->
+          <form id="cash-out-form" class="bg-white border border-gray-300 p-4 rounded-lg mb-4 hidden">
+            <div class="form-control mb-4">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input id="cash-out-amount-money" type="number" placeholder="Enter your amount" class="input input-bordered w-full" required />
+            </div>
+            <div class="form-control mb-4">
+              <label class="label">
+                <span class="label-text">Pin</span>
+              </label>
+              <input id="cash-out-pin-no" type="password" placeholder="Enter your pin" class="input input-bordered w-full" required />
+              <label class="label">
+                <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+              </label>
+            </div>
+            <div class="form-control">
+              <button id="cash-out" class="btn btn-primary w-full">Cash Out</button>
+            </div>
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </main>
+  
+      
+      
+      
+      <script src="js/home.js"></script>
+</body>
+</html>
